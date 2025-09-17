@@ -18,7 +18,7 @@
 
 body{
     font-family: 'Figtree', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /*------Mobile-------*/
@@ -82,6 +82,12 @@ main{
     color: var(--Yellow);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card__title:hover {
+    transition: none;
+  }
 }
 
 .card__text{
